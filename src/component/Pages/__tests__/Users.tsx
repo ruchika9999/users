@@ -67,7 +67,7 @@ describe("Delete", () => {
   it("should delete the user", async () => {
     mockedAxios.get.mockImplementation(() =>
       Promise.resolve({
-        data: users,
+        data: users.slice(0, 1),
       })
     );
 
@@ -85,6 +85,8 @@ describe("Delete", () => {
     });
 
     const mockTitle = screen.getByText(labelData.successMessage);
+    const noRecord = screen.getByText(labelData.noRecord);
     expect(mockTitle).toBeInTheDocument();
+    expect(noRecord).toBeInTheDocument();
   });
 });

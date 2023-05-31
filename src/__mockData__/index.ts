@@ -78,6 +78,7 @@ export const labelData = {
   address: "Kulas Light Gwenborough Apt. 556 92998-3874",
   networkError: "Network Error",
   successMessage: "User Deleted Successfully",
+  noRecord : "No Record"
 };
 
 export const testDataId = {
