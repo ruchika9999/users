@@ -1,9 +1,10 @@
 /* eslint-disable testing-library/no-unnecessary-act */
+import axios from "axios";
 import { act, render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
+
 import { store } from "../../../store/store";
 import Users from "../Users";
-import axios from "axios";
 import { users, labelData, testDataId } from "../../../__mockData__";
 import userEvent from "@testing-library/user-event";
 
